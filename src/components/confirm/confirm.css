@@ -1,0 +1,306 @@
+.ordersumm{
+    height: 50vw;
+    width: 60%;
+    box-shadow: 2px 2px 12px rgb(180, 180, 180);
+    margin-left: 21%;
+    margin-top: 7%;
+    border-radius:2vw ;
+    overflow: hidden;
+}
+
+.orderhead{
+   width: 100%;
+   height: 5vw;
+   background-color: rgb(16, 100, 255);
+   color: white;
+   text-align: center;
+   font-size: 3vw;
+   font-weight: bolder;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 5%;
+
+}
+tr{
+    
+}
+th, td {
+    font-size: 1.5vw;
+    font-weight:bolder;
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    border: 1px solid black;
+}
+
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.val{
+    text-align: end;
+    color: green;
+}
+
+.navbtns{
+    display: flex;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+.previous{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 2.5vw;
+    width: 12vw;
+    border: .1vw solid rgb(51, 112, 255);
+    color:rgb(51, 112, 255);
+    font-size: 1.5vw;
+    border-radius: .5vw;
+    font-weight: lighter;
+}
+.link:hover{
+    text-decoration: none;
+}
+
+
+.cancel{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 2.5vw;
+    width: 18vw;
+    border: .1vw solid rgb(255, 0, 34);
+    color:rgb(255, 0, 34) ;
+    font-size: 1.5vw;
+    border-radius: .5vw;
+    margin-left: 4%;
+    font-weight: lighter;
+}
+.cancel:hover , .previous:hover{
+cursor: pointer;
+}
+.payNow  {
+    margin-top: 5%;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-left: 5%;
+    width: 89%;
+    color: white;
+    background-color: rgb(66, 66, 255);
+
+}
+.paylater{
+    margin-top: 5%;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    margin-left: 5%;
+    width: 89%;
+    color: white;
+    background-color: rgb(66, 66, 255);
+}
+.paylater:hover{
+    background-color: blue;
+    color: white;
+}
+.payNow:hover{
+    background-color: blue;
+    color: white;
+}
+
+/* cupons */
+
+.cuponcodebox{
+    height: 20vw;
+    width: 80%;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 1vw;
+    margin-left: 10%;
+    margin-top: 5%;
+
+}
+
+.cuponboxhead{
+    font-size: 2vw;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+    text-align: center;
+}
+.cuopncodes{
+    margin-left: 4%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.cupons{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 85%;
+    height: 10vw;
+    box-shadow: 2px 2px 10px rgb(201, 201, 201);
+    border-radius: 1vw;
+    cursor: pointer;
+
+}
+.cuopntitle{
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(52, 52, 255);
+    color: white;
+    font-size: 1.5vw;
+    font-family: sans-serif;
+    font-weight: bolder;
+
+}
+.cupondisc{
+   display: flex;
+    font-size: 1vw;
+    color: blue;
+    width: 100%;
+    height: 5vw;
+    background-color: white;
+}
+.cupondisc > p{
+    display: flex;
+    margin-top: 4%;
+}
+@media screen and (max-width:700px){
+    .ordersumm{
+        height: 110vw;
+      
+        width: 90%;
+        box-shadow: 2px 2px 12px rgb(180, 180, 180);
+        margin-left: 0%;
+        margin-top: 7%;
+        border-radius:2vw ;
+        margin-left: 5%;
+        overflow: hidden;
+    }
+    
+    .orderhead{
+       width: 100%;
+       height: 8vw;
+       background-color: rgb(16, 100, 255);
+       color: white;
+       text-align: center;
+       font-size: 5vw;
+       font-weight: bolder;
+    }
+    
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 5%;
+    
+    }
+    tr{
+       
+        
+    }
+    th, td {
+
+        font-family: sans-serif;
+        font-weight:bolder;
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        border: 1px solid black;
+
+    }
+    
+    
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    
+    th {
+        background-color: #f2f2f2;
+    }
+    
+    .val{
+        text-align: end;
+        color: green;
+        font-size: 3vw;
+    }
+
+    .lbl{
+        font-size: 3vw;
+    }
+    
+    .navbtns{
+        display: flex;
+        margin-top: 4%;
+        margin-left: 5%;
+    }
+    .previous{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 5vw;
+        width: 15vw;
+        border: .1vw solid rgb(51, 112, 255);
+        color:rgb(51, 112, 255);
+        font-size: 2.7vw;
+        border-radius: 1vw;
+        font-weight: bold;
+    }
+    .link:hover{
+        text-decoration: none;
+    }
+    
+    
+    .cancel{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        height: 5vw;
+        width: 23vw;
+        border: .1vw solid rgb(255, 0, 34);
+        color:rgb(255, 0, 34) ;
+        font-size: 2.7vw;
+        border-radius: 1vw;
+        margin-left: 4%;
+        font-weight: bold;
+    }
+    .cancel:hover , .previous:hover{
+    cursor: pointer;
+    }
+    .payNow  {
+        margin-top: 5%;
+        font-size: 2.5vw;
+        /* font-weight: bolder; */
+        margin-left: 5%;
+        width: 89%;
+        background-color: rgb(66, 66, 255);
+    
+    }
+    .paylater{
+        margin-top: 5%;
+        font-size: 2.5vw;
+        font-weight: bolder;
+        margin-left: 5%;
+        width: 89%;
+        background-color: rgb(66, 66, 255);
+    }
+    .radio-group{
+        font-size: 3.4vw;
+    }
+    
+}

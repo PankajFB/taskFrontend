@@ -1,0 +1,244 @@
+
+/* Using a class as an example for specific text elements */
+.text-element {
+    font-size: 24px; /* Default size for desktop */
+    text-decoration: underline; /* Default text decoration for desktop */
+    font-weight: bold;
+}
+
+/* Adjust for tablet sizes */
+@media (max-width: 992px) {
+    .text-element {
+        font-size: 20px;
+    }
+}
+
+/* Adjust for mobile landscape and smaller tablets */
+@media (max-width: 768px) {
+    .text-element {
+        font-size: 18px;
+        text-decoration: none; /* Maybe we decide underlines are too much for mobile */
+    }
+}
+
+/* Adjust for mobile portrait */
+@media (max-width: 480px) {
+    .text-element {
+        font-size: 16px;
+    }
+}
+
+.hero-section {
+    background-image: url('https://img.freepik.com/free-psd/laundry-room-with-mudroom-generative-ai-generative-ai_587448-2084.jpg?w=2000'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* You can adjust this value based on your needs */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
+.hero-title {
+    color: #020202; /* White color for the heading */
+    margin-bottom: 20px; /* Space between the heading and the button */
+    font-weight: bold;
+    text-shadow: 5px 5px 5px #fdfcfc;
+    font-size: 5em;
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3em;  /* Decrease font size on smaller screens */
+    }
+}
+.circle2 {
+    background-color: #fff;
+    height: 80px;
+    width: 80px;
+}
+.image-container {
+    width: 100px;           /* Define the width of the circle. */
+    height: 100px;          /* Define the height of the circle. */
+    background-color: white; /* White circle background */
+    border-radius: 50%;     /* Makes the container circular. */
+    display: flex;
+    justify-content: center; /* Center the image horizontally. */
+    align-items: center;     /* Center the image vertically. */
+    overflow: hidden;        /* Ensure any part of the image outside the circle is hidden. */
+}
+
+.profile-image {
+    width: 70%;            /* Resize image width. You can adjust as needed. */
+    height: auto;          /* Maintain the image's aspect ratio. */
+    display: block;        /* Remove the bottom space that inline-block images get. */
+    max-width: 100%;       /* Ensure the image doesn't exceed its container. */
+}
+.faq-container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+    .faq-container {
+        margin: 20px auto;  /* Decrease margin on smaller screens */
+        padding: 10px;     /* Decrease padding on smaller screens */
+    }
+}
+
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.accordion-button::before {
+    color: #fff;
+}
+
+.accordion-collapse {
+    border-top: 1px solid #e0e0e0;
+}
+.image {
+    object-fit: contain;
+    background-color: rgb(146, 146, 146);
+    padding: 15px;
+    height: 7rem;
+    width: 50%;
+    border-radius: 8px;
+    margin: 16%;
+}
+@media (max-width: 768px) {
+    .image {
+        padding: 10px;   /* Decrease padding on smaller screens */
+        height: 5rem;   /* Decrease height on smaller screens */
+        width: 70%;     /* Increase width on smaller screens */
+        margin: 10%;    /* Adjust margin on smaller screens */
+    }
+}
+.card:hover {
+    transform: translateY(-50px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    background-image: linear-gradient(rgb(5, 1, 53),rgb(20, 4, 77));
+    color: white;
+}
+
+.card .fab {
+    color: #777; 
+    transition: color 0.3s;
+}
+
+.card .fab:hover {
+    color: #333;
+}
+.custom-image {
+    width: 50%; /* Or whatever width you want */
+    height: auto; 
+   padding: 5%;
+    display: block; 
+    margin: 0 auto; /* Center the image inside the card */
+}
+@media (max-width: 768px) {
+    .custom-image {
+        width: 70%;  /* Increase width on smaller screens */
+        padding: 3%; /* Adjust padding on smaller screens */
+    }
+}
+.star-rating {
+    font-size: 24px;
+    color: gold;
+}
+
+.review-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reviewer-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reviewer-name {
+    margin-left: 10px;
+    font-weight: bold;
+}
+/* Existing CSS ... */
+
+/* For tablets and smaller laptops */
+@media (max-width: 992px) {
+    .col-md-6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+}
+
+/* For mobile landscape and smaller tablets */
+@media (max-width: 767px) {
+    .col-md-6 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+    .card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* For mobile portrait */
+@media (max-width: 480px) {
+    .container.mt-5 {
+        padding: 1rem;
+    }
+
+    h2.text-center {
+        font-size: 1.5rem;
+    }
+
+    .card-img-top.custom-image {
+        height: 150px;
+    }
+
+    .card-title {
+        font-size: 1.25rem;
+    }
+
+    .card-text {
+        font-size: 0.875rem;
+    }
+}
+.card {
+    width: 100%; /* Make cards fluid by default */
+    max-width: 350px; /* Maximum width on desktop, so they don't get too wide */
+    margin: 0 auto 20px; /* Center cards and give them some vertical space */
+    overflow: hidden; /* In case there's anything that should be contained within */
+    padding: 20px; /* Padding inside the card */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Optional: Some shadow for a lifted effect */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+@media (max-width: 992px) {
+    .card {
+        max-width: 90%; /* Take up more width on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%; /* Take full width on mobile */
+    }
+}
